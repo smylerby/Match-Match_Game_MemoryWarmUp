@@ -24,6 +24,7 @@
 		680E129C21DD36B900106189 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 680E129B21DD36B900106189 /* Default-568h@2x.png */; };
 		68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14C21DD3AA9005EDF72 /* protocols.swift */; };
 		68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14E21DD3AE5005EDF72 /* Card.swift */; };
+		68D2B15121DD3E75005EDF72 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */; };
 		DF409DF10EE71EBC00C498F5 /* Pods_Match_Match_Game_MemoryWarmUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		680E129B21DD36B900106189 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		68D2B14C21DD3AA9005EDF72 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		68D2B14E21DD3AE5005EDF72 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Match_Match_Game_MemoryWarmUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B792B48E47190E5A493F0C /* Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				680E127421DD2F6000106189 /* MatchGameViewController.swift */,
 				680E128E21DD321700106189 /* LoginViewController.swift */,
 				680E129021DD322400106189 /* ResultsViewController.swift */,
+				68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				680E127521DD2F6000106189 /* MatchGameViewController.swift in Sources */,
 				680E127321DD2F6000106189 /* AppDelegate.swift in Sources */,
 				680E128D21DD311000106189 /* CardModel.swift in Sources */,
+				68D2B15121DD3E75005EDF72 /* CardCollectionViewCell.swift in Sources */,
 				68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
