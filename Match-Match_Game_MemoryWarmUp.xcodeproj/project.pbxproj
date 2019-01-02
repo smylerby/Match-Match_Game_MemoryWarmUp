@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		680E127321DD2F6000106189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E127221DD2F6000106189 /* AppDelegate.swift */; };
-		680E127521DD2F6000106189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E127421DD2F6000106189 /* ViewController.swift */; };
+		680E127521DD2F6000106189 /* MatchGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E127421DD2F6000106189 /* MatchGameViewController.swift */; };
 		680E127821DD2F6000106189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680E127621DD2F6000106189 /* Main.storyboard */; };
 		680E127A21DD2F6300106189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680E127921DD2F6300106189 /* Assets.xcassets */; };
 		680E127D21DD2F6300106189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680E127B21DD2F6300106189 /* LaunchScreen.storyboard */; };
+		680E128921DD30F200106189 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128821DD30F200106189 /* TimerManager.swift */; };
+		680E128B21DD310200106189 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128A21DD310200106189 /* SoundManager.swift */; };
+		680E128D21DD311000106189 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128C21DD311000106189 /* CardModel.swift */; };
+		680E128F21DD321700106189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128E21DD321700106189 /* LoginViewController.swift */; };
+		680E129121DD322400106189 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E129021DD322400106189 /* ResultsViewController.swift */; };
+		DF409DF10EE71EBC00C498F5 /* Pods_Match_Match_Game_MemoryWarmUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35DC71FD24857684769B013A /* Pods-Match-Match_Game_MemoryWarmUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match-Match_Game_MemoryWarmUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp.release.xcconfig"; sourceTree = "<group>"; };
 		680E126F21DD2F6000106189 /* Match-Match_Game_MemoryWarmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Match-Match_Game_MemoryWarmUp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680E127221DD2F6000106189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		680E127421DD2F6000106189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		680E127421DD2F6000106189 /* MatchGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchGameViewController.swift; sourceTree = "<group>"; };
 		680E127721DD2F6000106189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		680E127921DD2F6300106189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680E127C21DD2F6300106189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		680E127E21DD2F6300106189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680E128821DD30F200106189 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		680E128A21DD310200106189 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		680E128C21DD311000106189 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		680E128E21DD321700106189 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		680E129021DD322400106189 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Match_Match_Game_MemoryWarmUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B792B48E47190E5A493F0C /* Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF409DF10EE71EBC00C498F5 /* Pods_Match_Match_Game_MemoryWarmUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				680E127121DD2F6000106189 /* Match-Match_Game_MemoryWarmUp */,
 				680E127021DD2F6000106189 /* Products */,
+				B6C5B7A841409CB6F5AADC11 /* Pods */,
+				BDA7BD54121E1F485BDC86F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,68 @@
 		680E127121DD2F6000106189 /* Match-Match_Game_MemoryWarmUp */ = {
 			isa = PBXGroup;
 			children = (
-				680E127221DD2F6000106189 /* AppDelegate.swift */,
-				680E127421DD2F6000106189 /* ViewController.swift */,
+				680E128421DD30A100106189 /* Model */,
+				680E128521DD30A900106189 /* View */,
+				680E128621DD30AE00106189 /* Controller */,
+				680E128721DD30B700106189 /* Supporting */,
+			);
+			path = "Match-Match_Game_MemoryWarmUp";
+			sourceTree = "<group>";
+		};
+		680E128421DD30A100106189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				680E128821DD30F200106189 /* TimerManager.swift */,
+				680E128A21DD310200106189 /* SoundManager.swift */,
+				680E128C21DD311000106189 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		680E128521DD30A900106189 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				680E127621DD2F6000106189 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		680E128621DD30AE00106189 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				680E127421DD2F6000106189 /* MatchGameViewController.swift */,
+				680E128E21DD321700106189 /* LoginViewController.swift */,
+				680E129021DD322400106189 /* ResultsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		680E128721DD30B700106189 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				680E127221DD2F6000106189 /* AppDelegate.swift */,
 				680E127921DD2F6300106189 /* Assets.xcassets */,
 				680E127B21DD2F6300106189 /* LaunchScreen.storyboard */,
 				680E127E21DD2F6300106189 /* Info.plist */,
 			);
-			path = "Match-Match_Game_MemoryWarmUp";
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		B6C5B7A841409CB6F5AADC11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5B792B48E47190E5A493F0C /* Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig */,
+				35DC71FD24857684769B013A /* Pods-Match-Match_Game_MemoryWarmUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDA7BD54121E1F485BDC86F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 680E128121DD2F6300106189 /* Build configuration list for PBXNativeTarget "Match-Match_Game_MemoryWarmUp" */;
 			buildPhases = (
+				7D8BCACE69EBB88503AC6DA9 /* [CP] Check Pods Manifest.lock */,
 				680E126B21DD2F6000106189 /* Sources */,
 				680E126C21DD2F6000106189 /* Frameworks */,
 				680E126D21DD2F6000106189 /* Resources */,
+				D8FFFA00B535F80157CB5F60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +203,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D8BCACE69EBB88503AC6DA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Match-Match_Game_MemoryWarmUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8FFFA00B535F80157CB5F60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		680E126B21DD2F6000106189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				680E127521DD2F6000106189 /* ViewController.swift in Sources */,
+				680E128F21DD321700106189 /* LoginViewController.swift in Sources */,
+				680E128921DD30F200106189 /* TimerManager.swift in Sources */,
+				680E128B21DD310200106189 /* SoundManager.swift in Sources */,
+				680E129121DD322400106189 /* ResultsViewController.swift in Sources */,
+				680E127521DD2F6000106189 /* MatchGameViewController.swift in Sources */,
 				680E127321DD2F6000106189 /* AppDelegate.swift in Sources */,
+				680E128D21DD311000106189 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +407,7 @@
 		};
 		680E128221DD2F6300106189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5B792B48E47190E5A493F0C /* Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +426,7 @@
 		};
 		680E128321DD2F6300106189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DC71FD24857684769B013A /* Pods-Match-Match_Game_MemoryWarmUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
