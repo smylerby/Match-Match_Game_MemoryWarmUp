@@ -7,3 +7,48 @@
 //
 
 import Foundation
+import AVFoundation
+
+class SoundManager {
+    
+    static var player: AVAudioPlayer?
+    
+    enum SoundEffect {
+        case flip, shuffle, match, nomatch
+    }
+    
+    static func playSound(_ effect: SoundEffect) {
+        
+        var soundFilename = ""
+        
+        switch effect {
+        case .flip:
+            soundFilename = "cardflip"
+        case .shuffle:
+            soundFilename = "shuffle"
+        case .match:
+            soundFilename = "dingcorrect"
+        case .nomatch:
+            soundFilename = "dingwrong"
+        }
+        
+        let bundlePath = Bundle.main.path(forResource: soundFilename, ofType: "wav")
+        
+        guard bundlePath != nil else {
+            print("Error: Sound file doesn't exist!")
+            return }
+        
+        //  Create an URL object fro this string path
+        
+        let soundURL = URL(fileURLWithPath: bundlePath!)
+        
+        //  Create APlayer
+        do {
+            player = try AVAudioPlayer(contentsOf: soundURL)
+            player?.play()
+            
+        } catch {
+            print("Couldn't create the player for this file: \(soundFilename)")
+        }
+    }
+}

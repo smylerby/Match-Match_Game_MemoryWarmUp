@@ -22,6 +22,8 @@
 		680E129921DD35F500106189 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129521DD35F500106189 /* cardflip.wav */; };
 		680E129A21DD35F500106189 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129621DD35F500106189 /* dingcorrect.wav */; };
 		680E129C21DD36B900106189 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 680E129B21DD36B900106189 /* Default-568h@2x.png */; };
+		68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14C21DD3AA9005EDF72 /* protocols.swift */; };
+		68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14E21DD3AE5005EDF72 /* Card.swift */; };
 		DF409DF10EE71EBC00C498F5 /* Pods_Match_Match_Game_MemoryWarmUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		680E129521DD35F500106189 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
 		680E129621DD35F500106189 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
 		680E129B21DD36B900106189 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		68D2B14C21DD3AA9005EDF72 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
+		68D2B14E21DD3AE5005EDF72 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Match_Match_Game_MemoryWarmUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B792B48E47190E5A493F0C /* Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 				680E128821DD30F200106189 /* TimerManager.swift */,
 				680E128A21DD310200106189 /* SoundManager.swift */,
 				680E128C21DD311000106189 /* CardModel.swift */,
+				68D2B14E21DD3AE5005EDF72 /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				680E127921DD2F6300106189 /* Assets.xcassets */,
 				680E127B21DD2F6300106189 /* LaunchScreen.storyboard */,
 				680E127E21DD2F6300106189 /* Info.plist */,
+				68D2B14C21DD3AA9005EDF72 /* protocols.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -286,12 +292,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				680E128F21DD321700106189 /* LoginViewController.swift in Sources */,
+				68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */,
 				680E128921DD30F200106189 /* TimerManager.swift in Sources */,
 				680E128B21DD310200106189 /* SoundManager.swift in Sources */,
 				680E129121DD322400106189 /* ResultsViewController.swift in Sources */,
 				680E127521DD2F6000106189 /* MatchGameViewController.swift in Sources */,
 				680E127321DD2F6000106189 /* AppDelegate.swift in Sources */,
 				680E128D21DD311000106189 /* CardModel.swift in Sources */,
+				68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

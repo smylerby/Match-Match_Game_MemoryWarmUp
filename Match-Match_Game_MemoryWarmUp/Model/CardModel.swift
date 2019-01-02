@@ -7,3 +7,33 @@
 //
 
 import Foundation
+
+class CardModel {
+    
+    func getCard() -> [Card] {
+        
+        var generatedCardArray = [Card]()
+        var genetatedRandomNumbersArray = [UInt32]()
+        
+        while genetatedRandomNumbersArray.count < 10 {
+            
+            let randomNumber = arc4random_uniform(11)
+            
+            if genetatedRandomNumbersArray.contains(randomNumber) == false {
+                genetatedRandomNumbersArray.append(randomNumber)
+                
+                let cardOne = Card()
+                cardOne.imageName = "card\(randomNumber)"
+                generatedCardArray.append(cardOne)
+                
+                let cardTwo = Card()
+                cardTwo.imageName = "card\(randomNumber)"
+                generatedCardArray.append(cardTwo)
+            }
+        }
+        
+        generatedCardArray.shuffle()
+        return generatedCardArray
+    }
+    
+}
