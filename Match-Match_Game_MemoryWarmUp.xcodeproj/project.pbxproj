@@ -17,6 +17,10 @@
 		680E128D21DD311000106189 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128C21DD311000106189 /* CardModel.swift */; };
 		680E128F21DD321700106189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128E21DD321700106189 /* LoginViewController.swift */; };
 		680E129121DD322400106189 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E129021DD322400106189 /* ResultsViewController.swift */; };
+		680E129721DD35F500106189 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129321DD35F500106189 /* shuffle.wav */; };
+		680E129821DD35F500106189 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129421DD35F500106189 /* dingwrong.wav */; };
+		680E129921DD35F500106189 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129521DD35F500106189 /* cardflip.wav */; };
+		680E129A21DD35F500106189 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129621DD35F500106189 /* dingcorrect.wav */; };
 		DF409DF10EE71EBC00C498F5 /* Pods_Match_Match_Game_MemoryWarmUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		680E128C21DD311000106189 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		680E128E21DD321700106189 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		680E129021DD322400106189 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		680E129321DD35F500106189 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		680E129421DD35F500106189 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		680E129521DD35F500106189 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		680E129621DD35F500106189 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
 		78AA0B02731DF232E890411A /* Pods_Match_Match_Game_MemoryWarmUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Match_Match_Game_MemoryWarmUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B792B48E47190E5A493F0C /* Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Match-Match_Game_MemoryWarmUp/Pods-Match-Match_Game_MemoryWarmUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,12 +118,24 @@
 		680E128721DD30B700106189 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				680E129221DD35C500106189 /* Sounds */,
 				680E127221DD2F6000106189 /* AppDelegate.swift */,
 				680E127921DD2F6300106189 /* Assets.xcassets */,
 				680E127B21DD2F6300106189 /* LaunchScreen.storyboard */,
 				680E127E21DD2F6300106189 /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		680E129221DD35C500106189 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				680E129521DD35F500106189 /* cardflip.wav */,
+				680E129621DD35F500106189 /* dingcorrect.wav */,
+				680E129421DD35F500106189 /* dingwrong.wav */,
+				680E129321DD35F500106189 /* shuffle.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		B6C5B7A841409CB6F5AADC11 /* Pods */ = {
@@ -195,9 +215,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680E129721DD35F500106189 /* shuffle.wav in Resources */,
+				680E129821DD35F500106189 /* dingwrong.wav in Resources */,
 				680E127D21DD2F6300106189 /* LaunchScreen.storyboard in Resources */,
 				680E127A21DD2F6300106189 /* Assets.xcassets in Resources */,
 				680E127821DD2F6000106189 /* Main.storyboard in Resources */,
+				680E129A21DD35F500106189 /* dingcorrect.wav in Resources */,
+				680E129921DD35F500106189 /* cardflip.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
