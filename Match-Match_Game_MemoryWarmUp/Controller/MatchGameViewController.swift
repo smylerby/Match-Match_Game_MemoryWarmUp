@@ -15,9 +15,8 @@ class MatchGameViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var triesLabel: UILabel!
 
-
+    var playersName: String = ""
     var timer = TimerManager()
-    
     var tryCounter = 0
     var cardArray = [Card]()
     let cardManager = CardDataManager()
@@ -34,16 +33,11 @@ class MatchGameViewController: UIViewController {
         cardArray = cardManager.getCard()
         
         SoundManager.playSound(.shuffle)
-        self.title = "Match-Match Game!"
+        self.title = "\(playersName)'s game!"
         //Запуск таймера
         timer.startTimer(label: timeLabel)
         
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//        //Звук перемешивания карт при появлении экрана с картами приложения
-//
-//
-//    }
     
     func checkForMatches(_ secondFlippedCardIndex: IndexPath) {
         //Функция, запрещающая нажимать все карты подряд, после открытия второй карты вызывается метод isUserInteractionEnable для CollectionView

@@ -9,25 +9,36 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet weak var startButtonOutlet: UIButton!
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var startButtonOutlet: UIButton!
+    @IBOutlet weak var saveNameOutlet: UIButton!
+    
+    @IBAction func showResults(_ sender: UIButton) {
+        
+    }
+    @IBAction func saveNameButtonPressed(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //Жест для скрывания клавиатуры при нажатии на вью
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "launchGameSegue" {
+            let destVC = segue.destination as! MatchGameViewController
+            if let playersName = nameTextField.text {
+                destVC.playersName = playersName
+            }
+        }
     }
-    */
-
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }

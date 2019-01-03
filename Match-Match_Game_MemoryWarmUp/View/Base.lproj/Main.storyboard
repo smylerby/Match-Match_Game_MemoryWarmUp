@@ -44,6 +44,9 @@
                                         <color key="backgroundColor" red="0.82943781849999998" green="0.96413761519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="SAVE"/>
+                                        <connections>
+                                            <action selector="saveNameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJk-P3-FIq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92530035970000002" green="0.96431583170000001" blue="0.99957782029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="START"/>
                                 <connections>
-                                    <segue destination="Mmu-Ql-wt3" kind="show" id="wW1-UZ-T28"/>
+                                    <segue destination="Mmu-Ql-wt3" kind="show" identifier="launchGameSegue" id="wW1-UZ-T28"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEh-pE-q5e">
@@ -80,6 +83,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Show high scores"/>
+                                <connections>
+                                    <action selector="showResults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6f-cH-Rej"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Match-Match Game!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFK-Cb-MUu">
                                 <rect key="frame" x="43.5" y="80" width="288" height="24"/>
@@ -125,12 +131,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wx3-90-AzV"/>
                     <connections>
+                        <outlet property="nameTextField" destination="Poo-CV-0Rj" id="X5t-Gh-XwL"/>
+                        <outlet property="saveNameOutlet" destination="ysm-17-pMV" id="N9B-B0-zRY"/>
                         <outlet property="startButtonOutlet" destination="boN-sf-A9M" id="hcd-Zp-V9Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.375" y="133.09859154929578"/>
+            <point key="canvasLocation" x="1121" y="27"/>
         </scene>
         <!--Match Game View Controller-->
         <scene sceneID="4iU-UM-8ee">
@@ -415,7 +423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGi-94-SRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="134"/>
+            <point key="canvasLocation" x="412" y="27"/>
         </scene>
     </scenes>
     <resources>
