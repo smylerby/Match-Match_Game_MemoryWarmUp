@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
@@ -24,6 +25,12 @@ class LoginViewController: UIViewController {
         //Жест для скрывания клавиатуры при нажатии на вью
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        //Добавляем кнопку Логина через Фейсбук
+        let loginFBButton = FBSDKLoginButton()
+        loginFBButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32 , height: 50)
+        view.addSubview(loginFBButton)
+        loginFBButton.delegate = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,6 +42,43 @@ class LoginViewController: UIViewController {
         }
     }
     
+
+}
+
+extension LoginViewController: FBSDKLoginButtonDelegate {
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Did log out of FaceBook")
+    }
+    
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+
+        guard error == nil else {
+            print(error)
+            return
+        }
+        print("LogIn")
+//        //Запрос пользовательских данных
+//        let request = FBSDKGraphRequest.init(graphPath: "/me", parameters: ["fields": "id, name, email"])
+//        request?.start(completionHandler: { (connection, result, err) in
+//            if err != nil {
+//                print("Failed with", err!)
+//                return
+//            }
+//
+//            // Получаем Имя и Емейл пользователя для передачи в КорДату
+//            let fbDetails = result as! NSDictionary
+//            let userName = fbDetails["name"] as! String
+//             let userEmail = fbDetails["email"] as! String
+//
+//        })
+
+    }
+}
+
+extension LoginViewController {
+    //Прячем клавиатуру при при окончании ввода
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
