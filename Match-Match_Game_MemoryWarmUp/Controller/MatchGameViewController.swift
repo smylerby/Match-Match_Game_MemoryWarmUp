@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MatchGameViewController: UIViewController {
     
@@ -14,7 +15,7 @@ class MatchGameViewController: UIViewController {
     @IBOutlet weak var bottomLogView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var triesLabel: UILabel!
-
+    
     var playersName: String = ""
     var timer = TimerManager()
     var tryCounter = 0
@@ -38,7 +39,7 @@ class MatchGameViewController: UIViewController {
         timer.startTimer(label: timeLabel)
         
     }
-    
+    // MARK: - Главная функция сравнения карт
     func checkForMatches(_ secondFlippedCardIndex: IndexPath) {
         //Функция, запрещающая нажимать все карты подряд, после открытия второй карты вызывается метод isUserInteractionEnable для CollectionView
         disableTapping()
@@ -93,15 +94,16 @@ class MatchGameViewController: UIViewController {
     //Алерт об успешном  окончании игры
     func showAlert() {
         
-        let title = "Congratilations!"
-        let message = "You've won!"
+        let title = "You've won!"
+        let message = "The result is: \(timer.counter) sec., \(tryCounter) attempts!"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertActionRetry = UIAlertAction(title: "Retry", style: .default) { _ in
-
+            
             self.reloadView()
         }
-        let alertActionShowResults = UIAlertAction(title: "Show results", style: .default) { _ in
-            print("Just a second")
+        let alertActionShowResults = UIAlertAction(title: "Save result", style: .default) { _ in
+            self.savePlayersData()
+
         }
         alert.addAction(alertActionRetry)
         alert.addAction(alertActionShowResults)
@@ -114,13 +116,13 @@ class MatchGameViewController: UIViewController {
             self.collectionView.isUserInteractionEnabled = true
         }
     }
-//    Добавить попытку
+    //    Добавить попытку
     func addTry() {
         tryCounter += 1
         triesLabel.text = String(tryCounter)
     }
-
-//    Перезапуск игры
+    
+    //    Перезапуск игры
     func reloadView() {
         timer.reset()
         tryCounter = 0
@@ -134,10 +136,8 @@ class MatchGameViewController: UIViewController {
 }
 
 
-extension MatchGameViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+extension MatchGameViewController: UICollectionViewDelegateFlowLayout {
     //    Работа с коллекншВью
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let itemsPerRow: CGFloat = 4
@@ -157,6 +157,8 @@ extension MatchGameViewController: UICollectionViewDelegate, UICollectionViewDat
         return CGSize(width: widthPerItem, height: heightRow)
         
     }
+}
+extension MatchGameViewController: UICollectionViewDataSource, UICollectionViewDelegate  {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return cardArray.count
@@ -169,7 +171,6 @@ extension MatchGameViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.setCard(card)
         return cell
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -192,6 +193,15 @@ extension MatchGameViewController: UICollectionViewDelegate, UICollectionViewDat
                 checkForMatches(indexPath)
             }
         }
+    }
+}
+
+//  MARK: REALM. Save data
+extension MatchGameViewController {
+    //    Запись информации об игре (Имя, результат)
+    func savePlayersData() {
+        let newScore = User(name: playersName, time: timer.counter, tries: tryCounter)
+        RealmService.shared.create(newScore)
     }
 }
 

@@ -12,6 +12,7 @@ import RealmSwift
 class ResultsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var users: Results<User>!
     
     var notificationToken: NotificationToken?
@@ -22,10 +23,10 @@ class ResultsViewController: UIViewController {
         let realm = RealmService.shared.realm
         users = realm.objects(User.self)
         
-       notificationToken = realm.observe { (notification, realm) in
+        notificationToken = realm.observe { (notification, realm) in
             self.tableView.reloadData()
         }
-        
+
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,6 +53,5 @@ extension ResultsViewController: UITableViewDataSource {
 
         return cell
     }
-    
-    
 }
+
