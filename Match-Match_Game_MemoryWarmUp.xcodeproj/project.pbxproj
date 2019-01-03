@@ -23,6 +23,8 @@
 		680E129A21DD35F500106189 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129621DD35F500106189 /* dingcorrect.wav */; };
 		680E129C21DD36B900106189 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 680E129B21DD36B900106189 /* Default-568h@2x.png */; };
 		6838B03521DDF3FE00BEA5D3 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03421DDF3FE00BEA5D3 /* ResultTableViewCell.swift */; };
+		6838B03721DDF7B100BEA5D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03621DDF7B100BEA5D3 /* User.swift */; };
+		6838B03921DDFCD800BEA5D3 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03821DDFCD800BEA5D3 /* RealmService.swift */; };
 		68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14C21DD3AA9005EDF72 /* protocols.swift */; };
 		68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14E21DD3AE5005EDF72 /* Card.swift */; };
 		68D2B15121DD3E75005EDF72 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */; };
@@ -49,6 +51,8 @@
 		680E129621DD35F500106189 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
 		680E129B21DD36B900106189 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6838B03421DDF3FE00BEA5D3 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		6838B03621DDF7B100BEA5D3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6838B03821DDFCD800BEA5D3 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		68D2B14C21DD3AA9005EDF72 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		68D2B14E21DD3AE5005EDF72 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				680E128A21DD310200106189 /* SoundManager.swift */,
 				680E128C21DD311000106189 /* CardDataManager.swift */,
 				68D2B14E21DD3AE5005EDF72 /* Card.swift */,
+				6838B03621DDF7B100BEA5D3 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				680E127921DD2F6300106189 /* Assets.xcassets */,
 				680E127B21DD2F6300106189 /* LaunchScreen.storyboard */,
 				680E127E21DD2F6300106189 /* Info.plist */,
+				6838B03821DDFCD800BEA5D3 /* RealmService.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -305,6 +311,8 @@
 				680E129121DD322400106189 /* ResultsViewController.swift in Sources */,
 				680E127521DD2F6000106189 /* MatchGameViewController.swift in Sources */,
 				680E127321DD2F6000106189 /* AppDelegate.swift in Sources */,
+				6838B03721DDF7B100BEA5D3 /* User.swift in Sources */,
+				6838B03921DDFCD800BEA5D3 /* RealmService.swift in Sources */,
 				680E128D21DD311000106189 /* CardDataManager.swift in Sources */,
 				68D2B15121DD3E75005EDF72 /* CardCollectionViewCell.swift in Sources */,
 				68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */,

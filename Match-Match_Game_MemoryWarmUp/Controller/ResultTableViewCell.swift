@@ -14,6 +14,14 @@ class ResultTableViewCell: UITableViewCell {
     @IBOutlet weak var userTime: UILabel!
     @IBOutlet weak var userTries: UILabel!
     
+    
+    func configure(with user: User) {
+        userName.text = user.name
+        userTime.text = String(user.time)
+        userTries.text = String(user.triesInt()!)
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
