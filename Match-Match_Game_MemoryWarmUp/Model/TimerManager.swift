@@ -10,8 +10,8 @@ import UIKit
 
 class TimerManager: timeCountable {
     
-    private var timer = Timer()
-    private var counter: Int = 0
+    internal var timer = Timer()
+    internal var counter: Int = 0
     
     func startTimer(label: UILabel) {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block:  {_ in

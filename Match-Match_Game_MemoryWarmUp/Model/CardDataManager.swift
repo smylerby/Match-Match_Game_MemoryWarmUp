@@ -6,9 +6,9 @@
 //  Copyright © 2019 Rustam Shorov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class CardModel {
+class CardDataManager {
     
     func getCard() -> [Card] {
         

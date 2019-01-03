@@ -9,6 +9,9 @@
 import UIKit
 
 protocol timeCountable {
+    
+    var timer: Timer {get}
+    var counter: Int {get set}
     func startTimer(label: UILabel)
     func stopTimer()
 }

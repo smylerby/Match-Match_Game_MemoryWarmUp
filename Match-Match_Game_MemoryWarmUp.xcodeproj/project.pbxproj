@@ -14,7 +14,7 @@
 		680E127D21DD2F6300106189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680E127B21DD2F6300106189 /* LaunchScreen.storyboard */; };
 		680E128921DD30F200106189 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128821DD30F200106189 /* TimerManager.swift */; };
 		680E128B21DD310200106189 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128A21DD310200106189 /* SoundManager.swift */; };
-		680E128D21DD311000106189 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128C21DD311000106189 /* CardModel.swift */; };
+		680E128D21DD311000106189 /* CardDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128C21DD311000106189 /* CardDataManager.swift */; };
 		680E128F21DD321700106189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E128E21DD321700106189 /* LoginViewController.swift */; };
 		680E129121DD322400106189 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680E129021DD322400106189 /* ResultsViewController.swift */; };
 		680E129721DD35F500106189 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129321DD35F500106189 /* shuffle.wav */; };
@@ -39,7 +39,7 @@
 		680E127E21DD2F6300106189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680E128821DD30F200106189 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		680E128A21DD310200106189 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
-		680E128C21DD311000106189 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		680E128C21DD311000106189 /* CardDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataManager.swift; sourceTree = "<group>"; };
 		680E128E21DD321700106189 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		680E129021DD322400106189 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		680E129321DD35F500106189 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				680E128821DD30F200106189 /* TimerManager.swift */,
 				680E128A21DD310200106189 /* SoundManager.swift */,
-				680E128C21DD311000106189 /* CardModel.swift */,
+				680E128C21DD311000106189 /* CardDataManager.swift */,
 				68D2B14E21DD3AE5005EDF72 /* Card.swift */,
 			);
 			path = Model;
@@ -131,10 +131,10 @@
 			children = (
 				680E129221DD35C500106189 /* Sounds */,
 				680E127221DD2F6000106189 /* AppDelegate.swift */,
+				68D2B14C21DD3AA9005EDF72 /* protocols.swift */,
 				680E127921DD2F6300106189 /* Assets.xcassets */,
 				680E127B21DD2F6300106189 /* LaunchScreen.storyboard */,
 				680E127E21DD2F6300106189 /* Info.plist */,
-				68D2B14C21DD3AA9005EDF72 /* protocols.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -301,7 +301,7 @@
 				680E129121DD322400106189 /* ResultsViewController.swift in Sources */,
 				680E127521DD2F6000106189 /* MatchGameViewController.swift in Sources */,
 				680E127321DD2F6000106189 /* AppDelegate.swift in Sources */,
-				680E128D21DD311000106189 /* CardModel.swift in Sources */,
+				680E128D21DD311000106189 /* CardDataManager.swift in Sources */,
 				68D2B15121DD3E75005EDF72 /* CardCollectionViewCell.swift in Sources */,
 				68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */,
 			);

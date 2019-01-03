@@ -20,7 +20,7 @@ class MatchGameViewController: UIViewController {
     
     var tryCounter = 0
     var cardArray = [Card]()
-    let model = CardModel()
+    let model = CardDataManager()
     
     var firstFlippedCardIndex: IndexPath?
     var matchedPairsCounter = 0
