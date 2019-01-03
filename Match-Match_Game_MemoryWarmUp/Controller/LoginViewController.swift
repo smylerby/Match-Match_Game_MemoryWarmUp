@@ -22,13 +22,15 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Let's warm up!"
+        
         //Жест для скрывания клавиатуры при нажатии на вью
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         
         //Добавляем кнопку Логина через Фейсбук
         let loginFBButton = FBSDKLoginButton()
-        loginFBButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32 , height: 50)
+        loginFBButton.frame = CGRect(x: 16, y: 100, width: view.frame.width - 32 , height: 50)
         view.addSubview(loginFBButton)
         loginFBButton.delegate = self
     }
