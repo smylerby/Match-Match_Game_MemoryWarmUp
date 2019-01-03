@@ -120,16 +120,14 @@ class MatchGameViewController: UIViewController {
             self.collectionView.isUserInteractionEnabled = true
         }
     }
+//    Добавить попытку
     func addTry() {
         tryCounter += 1
         triesLabel.text = String(tryCounter)
     }
-    //Конец ViewController
 
+//    Перезапуск игры
     func reloadView() {
-//        self.timer.startTimer(label: timeLabel)
-//        cardArray.removeAll()
-//        cardArray = cardManager.getCard()
         timer.reset()
         tryCounter = 0
         matchedPairsCounter = 0
@@ -137,9 +135,8 @@ class MatchGameViewController: UIViewController {
         view.removeFromSuperview()
         view = nil
         parent?.addSubview(view)
-        print("rematch!")
     }
-
+    //Конец ViewController
 }
 
 
