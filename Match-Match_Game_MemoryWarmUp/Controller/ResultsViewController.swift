@@ -20,6 +20,8 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Results"
+        
         let realm = RealmService.shared.realm
         users = realm.objects(User.self)
         
