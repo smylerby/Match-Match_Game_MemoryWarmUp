@@ -92,15 +92,22 @@ class MatchGameViewController: UIViewController {
         
         addTry()
     }
-    //Алерт об успешном  окончании игры
     
+    //Алерт об успешном  окончании игры
     func showAlert() {
         
         let title = "Congratilations!"
         let message = "You've won!"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        alert.addAction(alertAction)
+        let alertActionRetry = UIAlertAction(title: "Retry", style: .default) { (_) in
+            print("rematch!")
+            self.rematch()
+        }
+        let alertActionShowResults = UIAlertAction(title: "Show results", style: .default) { _ in
+            print("Just a second")
+        }
+        alert.addAction(alertActionRetry)
+        alert.addAction(alertActionShowResults)
         present(alert, animated: true, completion: nil)
     }
     // Функция, предотвращающая нажатие всех карт подряд, максимум 2.
@@ -115,6 +122,13 @@ class MatchGameViewController: UIViewController {
         triesLabel.text = String(tryCounter)
     }
     //Конец ViewController
+    func rematch() {
+        cardArray.removeAll()
+        cardArray = cardManager.getCard()
+//        self.view.setNeedsLayout()
+        tryCounter = 0
+        matchedPairsCounter = 0
+    }
 
 }
 

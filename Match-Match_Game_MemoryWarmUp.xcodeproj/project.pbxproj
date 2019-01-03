@@ -139,11 +139,11 @@
 			children = (
 				680E129221DD35C500106189 /* Sounds */,
 				680E127221DD2F6000106189 /* AppDelegate.swift */,
+				6838B03821DDFCD800BEA5D3 /* RealmService.swift */,
 				68D2B14C21DD3AA9005EDF72 /* protocols.swift */,
 				680E127921DD2F6300106189 /* Assets.xcassets */,
 				680E127B21DD2F6300106189 /* LaunchScreen.storyboard */,
 				680E127E21DD2F6300106189 /* Info.plist */,
-				6838B03821DDFCD800BEA5D3 /* RealmService.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
