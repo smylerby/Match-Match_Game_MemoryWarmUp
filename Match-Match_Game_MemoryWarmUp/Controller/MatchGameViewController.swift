@@ -20,7 +20,7 @@ class MatchGameViewController: UIViewController {
     
     var tryCounter = 0
     var cardArray = [Card]()
-    let model = CardDataManager()
+    let cardManager = CardDataManager()
     
     var firstFlippedCardIndex: IndexPath?
     var matchedPairsCounter = 0
@@ -31,7 +31,7 @@ class MatchGameViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        cardArray = model.getCard()
+        cardArray = cardManager.getCard()
     }
     override func viewDidAppear(_ animated: Bool) {
         //Звук перемешивания карт при появлении экрана с картами приложения
@@ -173,7 +173,7 @@ extension MatchGameViewController: UICollectionViewDelegate, UICollectionViewDat
                 firstFlippedCardIndex = indexPath
                 
             } else {
-//                checkForMatches(indexPath)
+                checkForMatches(indexPath)
             }
         }
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 class CardDataManager {
-    
+
     func getCard() -> [Card] {
         
         var generatedCardArray = [Card]()
