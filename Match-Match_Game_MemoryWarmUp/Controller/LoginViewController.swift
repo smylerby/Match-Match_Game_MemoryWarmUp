@@ -14,9 +14,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var startButtonOutlet: UIButton!
     @IBOutlet weak var saveNameOutlet: UIButton!
     
-    @IBAction func showResults(_ sender: UIButton) {
-        
-    }
     @IBAction func saveNameButtonPressed(_ sender: UIButton) {
         
     }
