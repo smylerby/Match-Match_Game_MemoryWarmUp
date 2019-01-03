@@ -23,6 +23,7 @@ class TimerManager: timeCountable {
     func stopTimer() {
         timer.invalidate()
     }
-    
-    
+    func reset() {
+        counter = 0
+    }
 }

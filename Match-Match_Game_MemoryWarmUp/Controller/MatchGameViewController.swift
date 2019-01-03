@@ -32,15 +32,18 @@ class MatchGameViewController: UIViewController {
         collectionView.dataSource = self
         
         cardArray = cardManager.getCard()
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        //Звук перемешивания карт при появлении экрана с картами приложения
+        
         SoundManager.playSound(.shuffle)
         self.title = "Match-Match Game!"
         //Запуск таймера
         timer.startTimer(label: timeLabel)
         
     }
+//    override func viewDidAppear(_ animated: Bool) {
+//        //Звук перемешивания карт при появлении экрана с картами приложения
+//
+//
+//    }
     
     func checkForMatches(_ secondFlippedCardIndex: IndexPath) {
         //Функция, запрещающая нажимать все карты подряд, после открытия второй карты вызывается метод isUserInteractionEnable для CollectionView
@@ -99,9 +102,9 @@ class MatchGameViewController: UIViewController {
         let title = "Congratilations!"
         let message = "You've won!"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertActionRetry = UIAlertAction(title: "Retry", style: .default) { (_) in
-            print("rematch!")
-            self.rematch()
+        let alertActionRetry = UIAlertAction(title: "Retry", style: .default) { _ in
+
+            self.reloadView()
         }
         let alertActionShowResults = UIAlertAction(title: "Show results", style: .default) { _ in
             print("Just a second")
@@ -122,15 +125,23 @@ class MatchGameViewController: UIViewController {
         triesLabel.text = String(tryCounter)
     }
     //Конец ViewController
-    func rematch() {
-        cardArray.removeAll()
-        cardArray = cardManager.getCard()
-//        self.view.setNeedsLayout()
+
+    func reloadView() {
+//        self.timer.startTimer(label: timeLabel)
+//        cardArray.removeAll()
+//        cardArray = cardManager.getCard()
+        timer.reset()
         tryCounter = 0
         matchedPairsCounter = 0
+        let parent = view.superview
+        view.removeFromSuperview()
+        view = nil
+        parent?.addSubview(view)
+        print("rematch!")
     }
 
 }
+
 
 extension MatchGameViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
