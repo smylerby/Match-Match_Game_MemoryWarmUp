@@ -17,6 +17,13 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var startButtonOutlet: UIButton!
     @IBOutlet weak var saveNameOutlet: UIButton!
     
+    @IBAction func showResultsPressed(_ sender: UIButton) {
+
+        let resultsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "resultsVC") as! ResultsViewController
+        self.present(resultsVC, animated: true, completion: nil)
+
+    }
+    
     @IBAction func saveNameButtonPressed(_ sender: UIButton) {
         if nameTextField.text != "" {
             nameTextField.alpha = 0.6
@@ -43,6 +50,7 @@ class LoginViewController: UIViewController {
         loginFBButton.frame = CGRect(x: 16, y: 100, width: view.frame.width - 32 , height: 50)
         view.addSubview(loginFBButton)
         loginFBButton.delegate = self
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

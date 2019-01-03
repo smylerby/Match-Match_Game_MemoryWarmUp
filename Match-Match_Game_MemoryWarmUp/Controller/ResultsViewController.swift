@@ -13,14 +13,17 @@ class ResultsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        navigationController?.popToRootViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
+    
     var users: Results<User>!
     
     var notificationToken: NotificationToken?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = "Results"
         
         let realm = RealmService.shared.realm
         users = realm.objects(User.self)
@@ -30,13 +33,12 @@ class ResultsViewController: UIViewController {
         }
 
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         notificationToken?.invalidate()
     }
-    
 }
 
 extension ResultsViewController: UITableViewDataSource {
