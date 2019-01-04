@@ -88,16 +88,14 @@ class MatchGameViewController: UIViewController {
             //Звук несовпадения
             SoundManager.playSound(.nomatch)
         }
-        //
-        if cardOneCell == nil {
-            collectionView.reloadItems(at: [firstFlippedCardIndex!])
-        }
+        //Обнуление IndexPath
         firstFlippedCardIndex = nil
         
         //функция подсчитывает попытки найти совпадения
         addTry()
         
-        //Функция, запрещающая нажимать все карты подряд, после открытия второй карты вызывается метод isUserInteractionEnable для CollectionView
+        //Функция, запрещающая нажимать все карты подряд.
+        //После открытия второй карты вызывается метод isUserIteractionEnable для CollectionView
         disableTapping()
     }
     
@@ -115,6 +113,7 @@ class MatchGameViewController: UIViewController {
     // Запись результата и презентация таблицы результатов
         let alertActionShowResults = UIAlertAction(title: "Save result", style: .default) { _ in
             self.savePlayersData()
+            //Показ результатов
             let resultsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "resultsVC") as! ResultsViewController
             self.present(resultsVC, animated: true, completion: nil)
         }
@@ -127,7 +126,7 @@ class MatchGameViewController: UIViewController {
     // Функция, предотвращающая нажатие всех карт подряд, максимум 2.
     func disableTapping() {
         collectionView.isUserInteractionEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.7) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
             self.collectionView.isUserInteractionEnabled = true
         }
     }
