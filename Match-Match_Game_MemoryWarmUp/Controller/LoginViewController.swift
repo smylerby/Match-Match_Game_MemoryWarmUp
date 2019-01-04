@@ -11,8 +11,6 @@ import FBSDKLoginKit
 
 class LoginViewController: UIViewController {
     
-    var isLogged: Bool = false
-    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var startButtonOutlet: UIButton!
     @IBOutlet weak var saveNameOutlet: UIButton!
@@ -25,6 +23,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func saveNameButtonPressed(_ sender: UIButton) {
+        
+        // При пустом ТекстФилде не пускаем в игру
         if nameTextField.text != "" {
             nameTextField.alpha = 0.6
             nameTextField.isUserInteractionEnabled = false
@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
         loginFBButton.delegate = self
         
     }
-    
+    // Показать результаты из логинки
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "launchGameSegue" {
             let destVC = segue.destination as! MatchGameViewController
@@ -65,6 +65,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: FBSDKLoginButtonDelegate {
     
+    // При логауте из Фейсбука возврадаем кнопку SAVE
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         nameTextField.text = ""
         saveNameOutlet.setTitle("SAVE", for: .normal)
@@ -72,7 +73,7 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
         startButtonOutlet.isHidden = true
     }
     
-    
+    // Действия при нажатии на Логин
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
 
         guard error == nil else {
@@ -97,7 +98,7 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
 }
 
 extension LoginViewController {
-    //Прячем клавиатуру при при окончании ввода
+    //Прячем клавиатуру при окончании ввода
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

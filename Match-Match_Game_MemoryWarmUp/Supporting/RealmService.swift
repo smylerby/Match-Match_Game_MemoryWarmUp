@@ -6,6 +6,12 @@
 //  Copyright © 2019 Rustam Shorov. All rights reserved.
 //
 
+
+// Соббственная (отчасти) реализация работы с Реалмом.
+//Из этого используется только сохранение и чтение данных
+//Но также можно работать с перезаписью и удалением
+
+
 import Foundation
 import RealmSwift
 
@@ -15,7 +21,7 @@ class RealmService {
     static let shared = RealmService()
     
     var realm = try! Realm()
-    
+    //Сохранение
     func create<T: Object>(_ object: T) {
         do {
             
@@ -27,7 +33,7 @@ class RealmService {
             post(error)
         }
     }
-    
+    //Обновление
     func update<T: Object>(_ object: T, with dictionary: [String: Any?]) {
         do {
             try realm.write {
@@ -39,7 +45,7 @@ class RealmService {
             post(error)
         }
     }
-    
+    //Удаление
     func delete<T: Object>(_ object: T) {
         do {
             try realm.write {
@@ -49,7 +55,7 @@ class RealmService {
             post(error)
         }
     }
-    
+    //MARK: Обработчик ошибок
     func  post(_ error: Error) {
         NotificationCenter.default.post(name: NSNotification.Name("RealmError"), object: error)
     }

@@ -9,6 +9,9 @@
 import Foundation
 import RealmSwift
 
+
+//Модель ячейки игрока
+
 @objcMembers class User: Object {
     
     dynamic var name: String = ""

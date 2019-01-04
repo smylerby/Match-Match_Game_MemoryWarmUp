@@ -13,10 +13,12 @@ class SoundManager {
     
     static var player: AVAudioPlayer?
     
+    //Энамчик для 4х вариантов проигрывания звука
     enum SoundEffect {
         case flip, shuffle, match, nomatch
     }
     
+    //Функция типа. Наш проигрыватель
     static func playSound(_ effect: SoundEffect) {
         
         var soundFilename = ""

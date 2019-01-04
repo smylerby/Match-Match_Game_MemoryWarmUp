@@ -14,7 +14,7 @@ class ResultTableViewCell: UITableViewCell {
     @IBOutlet weak var userTime: UILabel!
     @IBOutlet weak var userTries: UILabel!
     
-    
+    // Функция наполнения ячейки с пользователем (Достаем юзера из реалма и суем в таблицу)
     func configure(with user: User) {
         userName.text = user.name
         userTime.text = String(user.time)

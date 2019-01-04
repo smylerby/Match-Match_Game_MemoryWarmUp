@@ -27,17 +27,11 @@ class MatchGameViewController: UIViewController {
     let cardManager = CardDataManager()
     
     var firstFlippedCardIndex: IndexPath?
-//
-//    let imageView: UIImageView = {
-//        let image = UIImageView()
-//        image.image = UIImage(named: "background_1")
-//        image.contentMode = .scaleAspectFill
-//        return image
-//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Добавили фон для колекшнВью
         self.collectionView.backgroundView = UIImageView(image: UIImage(named: "background_1"), highlightedImage: nil)
         
         collectionView.delegate = self

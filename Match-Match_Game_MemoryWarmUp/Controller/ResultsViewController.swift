@@ -13,18 +13,21 @@ class ResultsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // Дисмисс таблицы
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
-    
+    // Массив с игроками из БД
     var users: Results<User>!
     
+    //Обозреватель реалма
     var notificationToken: NotificationToken?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    // Синглтон Реальма
         let realm = RealmService.shared.realm
         users = realm.objects(User.self).sorted(byKeyPath: "time")
         
@@ -36,7 +39,7 @@ class ResultsViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+        //Освобождаем обозреватель при исчезновении окна с таблицой
         notificationToken?.invalidate()
     }
 }
