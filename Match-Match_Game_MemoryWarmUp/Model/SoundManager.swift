@@ -33,18 +33,18 @@ class SoundManager {
         case .nomatch:
             soundFilename = "dingwrong"
         }
-        
+        //Ищем файлы звука в проекте с определенным расширением
         let bundlePath = Bundle.main.path(forResource: soundFilename, ofType: "wav")
         
         guard bundlePath != nil else {
             print("Error: Sound file doesn't exist!")
             return }
         
-        //  Create an URL object fro this string path
+        // Создаем путь по такому-то адресу
         
         let soundURL = URL(fileURLWithPath: bundlePath!)
         
-        //  Create APlayer
+        //  Создаем проигрыватель
         do {
             player = try AVAudioPlayer(contentsOf: soundURL)
             player?.play()

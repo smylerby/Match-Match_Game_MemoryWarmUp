@@ -114,7 +114,8 @@
 		680E128521DD30A900106189 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				680E127621DD2F6000106189 /* Main.storyboard */,
+				6838B03421DDF3FE00BEA5D3 /* ResultTableViewCell.swift */,
+				68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,8 +126,6 @@
 				680E127421DD2F6000106189 /* MatchGameViewController.swift */,
 				680E128E21DD321700106189 /* LoginViewController.swift */,
 				680E129021DD322400106189 /* ResultsViewController.swift */,
-				68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */,
-				6838B03421DDF3FE00BEA5D3 /* ResultTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +133,7 @@
 		680E128721DD30B700106189 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				680E127621DD2F6000106189 /* Main.storyboard */,
 				680E129221DD35C500106189 /* Sounds */,
 				680E127221DD2F6000106189 /* AppDelegate.swift */,
 				6838B03821DDFCD800BEA5D3 /* RealmService.swift */,

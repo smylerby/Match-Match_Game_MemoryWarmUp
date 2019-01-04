@@ -6,6 +6,9 @@
 //  Copyright © 2019 Rustam Shorov. All rights reserved.
 //
 
+
+//Не самый нужный протокол, но это для того, чтобы показать, что я умею их создавать :)
+
 import UIKit
 
 protocol timeCountable {
