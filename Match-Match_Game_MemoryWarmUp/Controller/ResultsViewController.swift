@@ -26,7 +26,7 @@ class ResultsViewController: UIViewController {
         super.viewDidLoad()
         
         let realm = RealmService.shared.realm
-        users = realm.objects(User.self)
+        users = realm.objects(User.self).sorted(byKeyPath: "time")
         
         notificationToken = realm.observe { (notification, realm) in
             self.tableView.reloadData()

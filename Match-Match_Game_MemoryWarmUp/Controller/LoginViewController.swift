@@ -66,8 +66,10 @@ class LoginViewController: UIViewController {
 extension LoginViewController: FBSDKLoginButtonDelegate {
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        print("Did log out of FaceBook")
-        
+        nameTextField.text = ""
+        saveNameOutlet.setTitle("SAVE", for: .normal)
+        saveNameOutlet.backgroundColor = UIColor(red: 0.252, green: 0.529, blue: 0.97, alpha: 1)
+        startButtonOutlet.isHidden = true
     }
     
     
