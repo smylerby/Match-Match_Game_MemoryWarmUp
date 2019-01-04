@@ -67,6 +67,7 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("Did log out of FaceBook")
+        
     }
     
     
@@ -76,7 +77,6 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
             print(error)
             return
         }
-        print("LogIn")
         //Запрос пользовательских данных
         let request = FBSDKGraphRequest.init(graphPath: "/me", parameters: ["fields": "id, name, email"])
         request?.start(completionHandler: { (connection, result, err) in

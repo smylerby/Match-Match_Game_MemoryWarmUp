@@ -48,6 +48,9 @@
                                         <state key="normal" title="START">
                                             <color key="titleColor" red="1" green="0.99419510990000004" blue="0.99143688379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="Mmu-Ql-wt3" kind="show" identifier="launchGameSegue" id="wW1-UZ-T28"/>
                                         </connections>
@@ -71,6 +74,9 @@
                                         <state key="normal" title="SAVE">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="saveNameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJk-P3-FIq"/>
                                         </connections>
@@ -85,6 +91,9 @@
                                         <state key="normal" title="Show high scores">
                                             <color key="titleColor" red="1" green="0.99419510990000004" blue="0.99143688379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showResultsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2E-d7-qzn"/>
                                         </connections>
@@ -138,6 +147,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="f1B-nD-CG1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jel-A3-XHx">
                                 <rect key="frame" x="0.0" y="631" width="375" height="36"/>
                                 <subviews>
@@ -178,7 +190,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="5PB-2H-9b4" firstAttribute="leading" secondItem="74K-fG-LbE" secondAttribute="trailing" constant="20" id="4hY-EI-ock"/>
                                     <constraint firstAttribute="bottom" secondItem="Krr-W2-8ha" secondAttribute="bottom" constant="7" id="96i-mt-KU9"/>
@@ -197,7 +208,6 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4Oc-FA-w1i">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qa4-pa-RjF">
                                     <size key="itemSize" width="92" height="143"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -214,9 +224,15 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card0" translatesAutoresizingMaskIntoConstraints="NO" id="CAP-Wv-PhY">
                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="143"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backOfCard" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-mD-5zZ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Y01-mD-5zZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="143"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -230,6 +246,9 @@
                                             <constraint firstItem="Y01-mD-5zZ" firstAttribute="top" secondItem="3U0-5t-ZXf" secondAttribute="top" id="lMx-rO-MRz"/>
                                             <constraint firstItem="Y01-mD-5zZ" firstAttribute="leading" secondItem="3U0-5t-ZXf" secondAttribute="leading" id="x76-OL-zQr"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="backImageView" destination="Y01-mD-5zZ" id="Tnp-Dm-Dm6"/>
                                             <outlet property="frontImageView" destination="CAP-Wv-PhY" id="40h-BM-nYs"/>
@@ -245,8 +264,12 @@
                             <constraint firstItem="4Oc-FA-w1i" firstAttribute="trailing" secondItem="YEH-wl-yS4" secondAttribute="trailing" id="DJQ-ZT-LYv"/>
                             <constraint firstItem="4Oc-FA-w1i" firstAttribute="top" secondItem="UvC-jx-1Yx" secondAttribute="top" id="FpO-SS-3Bp"/>
                             <constraint firstItem="Jel-A3-XHx" firstAttribute="leading" secondItem="YEH-wl-yS4" secondAttribute="leading" id="Kbx-5C-g7Q"/>
+                            <constraint firstItem="f1B-nD-CG1" firstAttribute="bottom" secondItem="YEH-wl-yS4" secondAttribute="bottom" id="T2N-uw-C3I"/>
+                            <constraint firstItem="f1B-nD-CG1" firstAttribute="top" secondItem="UvC-jx-1Yx" secondAttribute="top" id="TrY-D1-Z3t"/>
                             <constraint firstItem="4Oc-FA-w1i" firstAttribute="leading" secondItem="YEH-wl-yS4" secondAttribute="leading" id="oDo-X1-bec"/>
+                            <constraint firstItem="f1B-nD-CG1" firstAttribute="leading" secondItem="YEH-wl-yS4" secondAttribute="leading" id="u5X-d5-Z98"/>
                             <constraint firstItem="Jel-A3-XHx" firstAttribute="trailing" secondItem="YEH-wl-yS4" secondAttribute="trailing" id="yV6-6L-7oQ"/>
+                            <constraint firstItem="f1B-nD-CG1" firstAttribute="trailing" secondItem="YEH-wl-yS4" secondAttribute="trailing" id="ypJ-cc-BCq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YEH-wl-yS4"/>
                     </view>
@@ -462,7 +485,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="backOfCard" width="150" height="200"/>
+        <image name="back" width="158" height="224"/>
+        <image name="background_1" width="414" height="736"/>
         <image name="card0" width="75" height="100"/>
     </resources>
 </document>

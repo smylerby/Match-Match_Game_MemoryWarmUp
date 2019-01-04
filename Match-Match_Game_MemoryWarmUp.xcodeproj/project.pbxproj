@@ -21,7 +21,6 @@
 		680E129821DD35F500106189 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129421DD35F500106189 /* dingwrong.wav */; };
 		680E129921DD35F500106189 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129521DD35F500106189 /* cardflip.wav */; };
 		680E129A21DD35F500106189 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 680E129621DD35F500106189 /* dingcorrect.wav */; };
-		680E129C21DD36B900106189 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 680E129B21DD36B900106189 /* Default-568h@2x.png */; };
 		6838B03521DDF3FE00BEA5D3 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03421DDF3FE00BEA5D3 /* ResultTableViewCell.swift */; };
 		6838B03721DDF7B100BEA5D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03621DDF7B100BEA5D3 /* User.swift */; };
 		6838B03921DDFCD800BEA5D3 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03821DDFCD800BEA5D3 /* RealmService.swift */; };
@@ -49,7 +48,6 @@
 		680E129421DD35F500106189 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
 		680E129521DD35F500106189 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
 		680E129621DD35F500106189 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
-		680E129B21DD36B900106189 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6838B03421DDF3FE00BEA5D3 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		6838B03621DDF7B100BEA5D3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6838B03821DDFCD800BEA5D3 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 		680E126621DD2F6000106189 = {
 			isa = PBXGroup;
 			children = (
-				680E129B21DD36B900106189 /* Default-568h@2x.png */,
 				680E127121DD2F6000106189 /* Match-Match_Game_MemoryWarmUp */,
 				680E127021DD2F6000106189 /* Products */,
 				B6C5B7A841409CB6F5AADC11 /* Pods */,
@@ -241,7 +238,6 @@
 				680E127D21DD2F6300106189 /* LaunchScreen.storyboard in Resources */,
 				680E127A21DD2F6300106189 /* Assets.xcassets in Resources */,
 				680E127821DD2F6000106189 /* Main.storyboard in Resources */,
-				680E129C21DD36B900106189 /* Default-568h@2x.png in Resources */,
 				680E129A21DD35F500106189 /* dingcorrect.wav in Resources */,
 				680E129921DD35F500106189 /* cardflip.wav in Resources */,
 			);
