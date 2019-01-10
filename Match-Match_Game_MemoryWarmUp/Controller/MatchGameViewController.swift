@@ -141,10 +141,15 @@ class MatchGameViewController: UIViewController {
         timer.reset()
         tryCounter = 0
         matchedPairsCounter = 0
+        
+        
+        //!!!!
         let parent = view.superview
         view.removeFromSuperview()
         view = nil
         parent?.addSubview(view)
+        
+        //!!!!
     }
     //Конец ViewController
 }

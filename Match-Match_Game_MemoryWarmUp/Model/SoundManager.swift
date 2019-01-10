@@ -16,6 +16,7 @@ class SoundManager {
     //Энамчик для 4х вариантов проигрывания звука
     enum SoundEffect {
         case flip, shuffle, match, nomatch
+        case red, blue, yellow, green
     }
     
     //Функция типа. Наш проигрыватель
@@ -24,6 +25,7 @@ class SoundManager {
         var soundFilename = ""
         
         switch effect {
+            //MatchMatchGame
         case .flip:
             soundFilename = "cardflip"
         case .shuffle:
@@ -32,6 +34,15 @@ class SoundManager {
             soundFilename = "dingcorrect"
         case .nomatch:
             soundFilename = "dingwrong"
+            //MemorizeSounds
+        case .red:
+            soundFilename = "1"
+        case .blue:
+            soundFilename = "3"
+        case .yellow:
+            soundFilename = "2"
+        case .green:
+            soundFilename = "4"
         }
         //Ищем файлы звука в проекте с определенным расширением
         let bundlePath = Bundle.main.path(forResource: soundFilename, ofType: "wav")
