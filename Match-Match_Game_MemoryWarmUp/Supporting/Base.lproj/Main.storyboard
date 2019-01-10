@@ -98,18 +98,29 @@
                                             <action selector="showResultsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2E-d7-qzn"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-KS-kOB">
+                                        <rect key="frame" x="131" y="262" width="112" height="42"/>
+                                        <state key="normal" title="Music"/>
+                                        <connections>
+                                            <segue destination="8Ba-zy-mWM" kind="show" id="Vjs-mv-0jm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92530035970000002" green="0.96431583170000001" blue="0.99957782029999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2hU-KS-kOB" secondAttribute="trailing" constant="132" id="0FI-Ok-kfd"/>
+                                    <constraint firstItem="boN-sf-A9M" firstAttribute="top" secondItem="2hU-KS-kOB" secondAttribute="bottom" constant="27" id="4wZ-mi-28p"/>
                                     <constraint firstItem="EuZ-2J-NBe" firstAttribute="top" secondItem="fXS-SY-zgm" secondAttribute="top" constant="8" id="5Zt-TE-aHr"/>
                                     <constraint firstItem="EuZ-2J-NBe" firstAttribute="leading" secondItem="fXS-SY-zgm" secondAttribute="leading" constant="16" id="6kq-yc-lA1"/>
                                     <constraint firstAttribute="bottom" secondItem="iEh-pE-q5e" secondAttribute="bottom" constant="24" id="7PT-YY-q63"/>
                                     <constraint firstItem="boN-sf-A9M" firstAttribute="leading" secondItem="fXS-SY-zgm" secondAttribute="leading" constant="68" id="EIJ-wi-bpw"/>
                                     <constraint firstItem="iEh-pE-q5e" firstAttribute="leading" secondItem="fXS-SY-zgm" secondAttribute="leading" constant="68" id="LOt-Gy-JCW"/>
+                                    <constraint firstItem="2hU-KS-kOB" firstAttribute="leading" secondItem="fXS-SY-zgm" secondAttribute="leading" constant="131" id="NZF-JS-4x4"/>
                                     <constraint firstItem="Poo-CV-0Rj" firstAttribute="leading" secondItem="fXS-SY-zgm" secondAttribute="leading" constant="16" id="U9A-t0-sop"/>
                                     <constraint firstAttribute="trailing" secondItem="EuZ-2J-NBe" secondAttribute="trailing" constant="16" id="VZp-p1-3Jt"/>
                                     <constraint firstItem="Poo-CV-0Rj" firstAttribute="top" secondItem="EuZ-2J-NBe" secondAttribute="bottom" constant="10" id="caD-gk-Bqn"/>
                                     <constraint firstItem="iEh-pE-q5e" firstAttribute="top" secondItem="boN-sf-A9M" secondAttribute="bottom" constant="24" id="eUz-6G-DoF"/>
+                                    <constraint firstItem="2hU-KS-kOB" firstAttribute="top" secondItem="ysm-17-pMV" secondAttribute="bottom" constant="108" id="ebW-kB-r8p"/>
                                     <constraint firstAttribute="trailing" secondItem="ysm-17-pMV" secondAttribute="trailing" constant="68" id="goA-ZL-nLH"/>
                                     <constraint firstItem="ysm-17-pMV" firstAttribute="leading" secondItem="fXS-SY-zgm" secondAttribute="leading" constant="68" id="lyU-Z0-eLn"/>
                                     <constraint firstAttribute="trailing" secondItem="iEh-pE-q5e" secondAttribute="trailing" constant="68" id="neC-WJ-FCm"/>
@@ -296,25 +307,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-uw-yMm">
-                                <rect key="frame" x="60" y="40" width="255" height="28.5"/>
+                                <rect key="frame" x="60" y="84" width="255" height="28.5"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg0-EQ-k7j">
-                                <rect key="frame" x="16" y="149" width="343" height="367"/>
+                                <rect key="frame" x="16" y="193" width="343" height="367"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFu-PU-Q4I">
                                         <rect key="frame" x="127.5" y="137" width="88" height="88"/>
                                         <state key="normal" image="play"/>
+                                        <connections>
+                                            <action selector="playButtonPressedAction:" destination="8Ba-zy-mWM" eventType="touchUpInside" id="jaM-pG-gIy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoG-Oe-adV">
                                         <rect key="frame" x="4.5" y="12" width="165" height="165"/>
                                         <state key="normal" image="red"/>
+                                        <connections>
+                                            <action selector="soundButtonPressed:" destination="8Ba-zy-mWM" eventType="touchUpInside" id="H1b-ld-z0a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b13-NW-e4h">
                                         <rect key="frame" x="4" y="182" width="165" height="166"/>
                                         <state key="normal" image="green"/>
+                                        <connections>
+                                            <action selector="soundButtonPressed:" destination="8Ba-zy-mWM" eventType="touchUpInside" id="0xz-4k-kTs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR9-3h-h3y">
                                         <rect key="frame" x="173" y="12" width="166" height="165"/>
@@ -326,6 +346,9 @@
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CZ-gs-Vqh">
                                         <rect key="frame" x="173" y="182" width="166" height="166"/>
                                         <state key="normal" image="blue"/>
+                                        <connections>
+                                            <action selector="soundButtonPressed:" destination="8Ba-zy-mWM" eventType="touchUpInside" id="WfK-aX-urn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -360,7 +383,10 @@
                     <connections>
                         <outlet property="levelLabel" destination="hSw-uw-yMm" id="LEo-4m-07p"/>
                         <outlet property="playButtonPressed" destination="fFu-PU-Q4I" id="6dn-7v-vzf"/>
-                        <outletCollection property="soundButton" destination="jR9-3h-h3y" collectionClass="NSMutableArray" id="AtY-LK-9hI"/>
+                        <outletCollection property="soundButtonArray" destination="ZoG-Oe-adV" collectionClass="NSMutableArray" id="Uqn-X0-IRk"/>
+                        <outletCollection property="soundButtonArray" destination="jR9-3h-h3y" collectionClass="NSMutableArray" id="gwT-DV-ck8"/>
+                        <outletCollection property="soundButtonArray" destination="7CZ-gs-Vqh" collectionClass="NSMutableArray" id="ihE-0J-t6l"/>
+                        <outletCollection property="soundButtonArray" destination="b13-NW-e4h" collectionClass="NSMutableArray" id="uoZ-2A-uSl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6N0-TH-pig" userLabel="First Responder" sceneMemberID="firstResponder"/>
