@@ -13,7 +13,6 @@ class CardDataManager {
     
     //Функция генерации массива с картами
     
-    
     func getCard() -> [Card] {
         
         var generatedCardArray = [Card]() //Массив наших карт

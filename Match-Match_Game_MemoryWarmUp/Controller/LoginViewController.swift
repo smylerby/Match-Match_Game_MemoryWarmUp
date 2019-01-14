@@ -55,9 +55,9 @@ class LoginViewController: UIViewController {
     // Показать результаты из логинки
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "launchGameSegue" {
-            let destVC = segue.destination as! MatchGameViewController
+            let destVC = segue.destination as! GamePickerViewController
             if let playersName = nameTextField.text {
-                destVC.playersName = playersName
+                destVC.playerName = playersName
             }
         }
     }

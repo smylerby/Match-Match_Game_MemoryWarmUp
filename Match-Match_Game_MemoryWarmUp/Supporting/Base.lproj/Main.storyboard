@@ -52,7 +52,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Mmu-Ql-wt3" kind="show" identifier="launchGameSegue" id="wW1-UZ-T28"/>
+                                            <segue destination="rn2-pf-pwr" kind="show" identifier="launchGameSegue" id="Dwd-4i-zS8"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Poo-CV-0Rj">
@@ -142,7 +142,7 @@
         <!--Match Game View Controller-->
         <scene sceneID="4iU-UM-8ee">
             <objects>
-                <viewController storyboardIdentifier="matchGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mmu-Ql-wt3" customClass="MatchGameViewController" customModule="Match_Match_Game_MemoryWarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mmu-Ql-wt3" customClass="MatchGameViewController" customModule="Match_Match_Game_MemoryWarmUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UvC-jx-1Yx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,12 +282,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Q7-r7-V3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797.5999999999999" y="-412.44377811094455"/>
+            <point key="canvasLocation" x="1823" y="-711"/>
         </scene>
         <!--Memorize Sounds View Controller-->
         <scene sceneID="Qkt-o8-GIL">
             <objects>
-                <viewController id="8Ba-zy-mWM" customClass="MemorizeSoundsViewController" customModule="Match_Match_Game_MemoryWarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemorizeSoundVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Ba-zy-mWM" customClass="MemorizeSoundsViewController" customModule="Match_Match_Game_MemoryWarmUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jhL-zH-utF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -380,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6N0-TH-pig" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629.5999999999999" y="-408.84557721139436"/>
+            <point key="canvasLocation" x="2591" y="-711"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="mTL-mV-EBT">
@@ -561,7 +561,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0G-qO-QSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798" y="481"/>
+            <point key="canvasLocation" x="2590" y="27"/>
         </scene>
         <!--Game Picker View Controller-->
         <scene sceneID="3aj-o0-OIW">
@@ -574,28 +574,39 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="NIB-nu-2j5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPw-gg-ca1">
-                                <rect key="frame" x="75" y="164" width="226" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.82943781849999998" green="0.96413761519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPw-gg-ca1">
+                                <rect key="frame" x="75" y="164" width="225" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Match - Match Game"/>
+                                <state key="normal" title="Match - Match Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startMatchGameButton:" destination="rn2-pf-pwr" eventType="touchUpInside" id="7QU-Ux-7r0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-So-RW6">
-                                <rect key="frame" x="75" y="224" width="226" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.82943781849999998" green="0.96413761519999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-So-RW6">
+                                <rect key="frame" x="75" y="224" width="225" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="vOz-Dx-x3I"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Memorize Sounds"/>
+                                <state key="normal" title="Memorize Sounds">
+                                    <color key="titleColor" red="1" green="0.99419510990000004" blue="0.99143688379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startMemorizeSoundsGameButton:" destination="rn2-pf-pwr" eventType="touchUpInside" id="AbX-K4-57u"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name, choose your game!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD6-ih-mJk">
-                                <rect key="frame" x="60" y="95" width="255" height="30"/>
+                                <rect key="frame" x="16" y="99" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="P0P-PM-7Ip"/>
                                 </constraints>
@@ -603,16 +614,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9r-MO-sfa">
+                                <rect key="frame" x="75" y="616" width="225" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="chq-QF-Udg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmi-h1-QNU">
+                                <rect key="frame" x="109" y="358" width="157" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8UP-db-DCb" firstAttribute="trailing" secondItem="VD6-ih-mJk" secondAttribute="trailing" constant="60" id="AYQ-H0-c5V"/>
+                            <constraint firstItem="S4R-So-RW6" firstAttribute="leading" secondItem="8UP-db-DCb" secondAttribute="leading" constant="75" id="71Q-98-Sy4"/>
+                            <constraint firstItem="8UP-db-DCb" firstAttribute="trailing" secondItem="VD6-ih-mJk" secondAttribute="trailing" constant="16" id="AYQ-H0-c5V"/>
                             <constraint firstItem="NIB-nu-2j5" firstAttribute="leading" secondItem="8UP-db-DCb" secondAttribute="leading" id="HaG-gS-7h0"/>
-                            <constraint firstItem="VD6-ih-mJk" firstAttribute="top" secondItem="8UP-db-DCb" secondAttribute="top" constant="75" id="J5h-fA-x5k"/>
+                            <constraint firstItem="VD6-ih-mJk" firstAttribute="top" secondItem="8UP-db-DCb" secondAttribute="top" constant="35" id="J5h-fA-x5k"/>
+                            <constraint firstItem="S4R-So-RW6" firstAttribute="top" secondItem="xPw-gg-ca1" secondAttribute="bottom" constant="24" id="KoI-Pe-42z"/>
+                            <constraint firstItem="8UP-db-DCb" firstAttribute="bottom" secondItem="V9r-MO-sfa" secondAttribute="bottom" constant="15" id="Kxj-2d-2lN"/>
+                            <constraint firstItem="V9r-MO-sfa" firstAttribute="leading" secondItem="8UP-db-DCb" secondAttribute="leading" constant="75" id="Opu-8A-1o6"/>
                             <constraint firstItem="NIB-nu-2j5" firstAttribute="top" secondItem="PY1-OB-30S" secondAttribute="top" id="YUQ-iz-r3E"/>
                             <constraint firstItem="NIB-nu-2j5" firstAttribute="bottom" secondItem="8UP-db-DCb" secondAttribute="bottom" id="Yk9-cD-8gc"/>
+                            <constraint firstItem="8UP-db-DCb" firstAttribute="trailing" secondItem="xPw-gg-ca1" secondAttribute="trailing" constant="75" id="c6p-fU-eks"/>
                             <constraint firstItem="NIB-nu-2j5" firstAttribute="trailing" secondItem="8UP-db-DCb" secondAttribute="trailing" id="cT7-tL-siQ"/>
-                            <constraint firstItem="VD6-ih-mJk" firstAttribute="leading" secondItem="8UP-db-DCb" secondAttribute="leading" constant="60" id="vA6-f0-5D5"/>
+                            <constraint firstItem="8UP-db-DCb" firstAttribute="trailing" secondItem="V9r-MO-sfa" secondAttribute="trailing" constant="75" id="fCU-sQ-gCG"/>
+                            <constraint firstItem="xPw-gg-ca1" firstAttribute="leading" secondItem="8UP-db-DCb" secondAttribute="leading" constant="75" id="iBd-bD-uHz"/>
+                            <constraint firstItem="8UP-db-DCb" firstAttribute="trailing" secondItem="S4R-So-RW6" secondAttribute="trailing" constant="75" id="qjv-zn-1LP"/>
+                            <constraint firstItem="VD6-ih-mJk" firstAttribute="leading" secondItem="8UP-db-DCb" secondAttribute="leading" constant="16" id="vA6-f0-5D5"/>
+                            <constraint firstItem="xPw-gg-ca1" firstAttribute="top" secondItem="VD6-ih-mJk" secondAttribute="bottom" constant="35" id="yn0-CO-qrF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8UP-db-DCb"/>
                     </view>
@@ -622,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPF-VY-m54" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2679.1999999999998" y="320.68965517241384"/>
+            <point key="canvasLocation" x="1821.5999999999999" y="26.53673163418291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XU2-7c-N0Z">
