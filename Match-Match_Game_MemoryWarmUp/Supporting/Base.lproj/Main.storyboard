@@ -629,6 +629,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="6"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startGameButton:" destination="rn2-pf-pwr" eventType="touchUpInside" id="hPW-SE-Rle"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmi-h1-QNU">
                                 <rect key="frame" x="109" y="358" width="157" height="239"/>
@@ -657,7 +660,11 @@
                         <viewLayoutGuide key="safeArea" id="8UP-db-DCb"/>
                     </view>
                     <connections>
+                        <outlet property="gameImage" destination="gmi-h1-QNU" id="WK3-DE-hbC"/>
+                        <outlet property="matchGameOutlet" destination="xPw-gg-ca1" id="ndM-AT-sSc"/>
+                        <outlet property="memorizeGameOutlet" destination="S4R-So-RW6" id="Wf5-CZ-CFN"/>
                         <outlet property="playerNameLabel" destination="VD6-ih-mJk" id="zW7-vc-CBB"/>
+                        <outlet property="startButtonOutlet" destination="V9r-MO-sfa" id="aXj-Nm-zBh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPF-VY-m54" userLabel="First Responder" sceneMemberID="firstResponder"/>
