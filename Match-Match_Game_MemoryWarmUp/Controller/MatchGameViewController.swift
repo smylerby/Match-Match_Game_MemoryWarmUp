@@ -41,7 +41,7 @@ class MatchGameViewController: UIViewController {
         cardArray = cardManager.getCard()
         
         //Звук перемешивания карт
-        SoundManager.playSound(.shuffle)
+        SoundManager.playSound("shuffle")
         //
         self.title = "\(playersName)'s game!"
         //Запуск таймера
@@ -75,7 +75,7 @@ class MatchGameViewController: UIViewController {
             cardOneCell?.removeMathedCard()
             cardTwoCell?.removeMathedCard()
             //Звук совпавшей пары
-            SoundManager.playSound(.match)
+            SoundManager.playSound("dingcorrect")
             
         } else {
             
@@ -86,7 +86,7 @@ class MatchGameViewController: UIViewController {
             cardTwoCell?.flipBackCard()
             
             //Звук несовпадения
-            SoundManager.playSound(.nomatch)
+            SoundManager.playSound("dingwrong")
         }
         //Обнуление IndexPath
         firstFlippedCardIndex = nil
@@ -208,7 +208,7 @@ extension MatchGameViewController: UICollectionViewDataSource, UICollectionViewD
             card.isFlipped = true
             
             // Звук переворота карты
-            SoundManager.playSound(.flip)
+            SoundManager.playSound("cardflip")
             
             // Если это первая карта из 2-х, то присваиваем ей индекс из коллекции
             if firstFlippedCardIndex == nil {

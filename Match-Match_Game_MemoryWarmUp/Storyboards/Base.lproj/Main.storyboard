@@ -295,8 +295,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="YXo-ab-SYR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-uw-yMm">
-                                <rect key="frame" x="60" y="40" width="200" height="28.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press Start!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-uw-yMm">
+                                <rect key="frame" x="60" y="40" width="200" height="29"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -411,7 +411,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attempts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bob-3u-0ZP">
-                                                    <rect key="frame" x="283" y="16" width="71" height="16"/>
+                                                    <rect key="frame" x="228" y="16" width="71" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Mm1-zw-cn9"/>
                                                         <constraint firstAttribute="width" constant="71" id="NmW-PG-Mke"/>
@@ -430,7 +430,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWO-4R-W8W">
-                                                    <rect key="frame" x="218" y="16" width="41" height="16"/>
+                                                    <rect key="frame" x="163" y="16" width="41" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="41" id="hbE-b5-YFr"/>
                                                     </constraints>

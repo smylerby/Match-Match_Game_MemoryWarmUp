@@ -14,38 +14,28 @@ class SoundManager {
     static var player: AVAudioPlayer?
     
     //Энамчик для 4х вариантов проигрывания звука
-    enum SoundEffect {
-        case flip, shuffle, match, nomatch
-        case red, blue, yellow, green
-    }
+//    enum SoundEffect {
+//        case flip, shuffle, match, nomatch
+//    }
     
     //Функция типа. Наш проигрыватель
-    static func playSound(_ effect: SoundEffect) {
+    static func playSound(_ effect: String) {
         
-        var soundFilename = ""
+//        var soundFilename = ""
         
-        switch effect {
-            //MatchMatchGame
-        case .flip:
-            soundFilename = "cardflip"
-        case .shuffle:
-            soundFilename = "shuffle"
-        case .match:
-            soundFilename = "dingcorrect"
-        case .nomatch:
-            soundFilename = "dingwrong"
-            //MemorizeSounds
-        case .red:
-            soundFilename = "1"
-        case .blue:
-            soundFilename = "3"
-        case .yellow:
-            soundFilename = "2"
-        case .green:
-            soundFilename = "4"
-        }
+//        switch effect {
+//            //MatchMatchGame
+//        case .flip:
+//            soundFilename = "cardflip"
+//        case .shuffle:
+//            soundFilename = "shuffle"
+//        case .match:
+//            soundFilename = "dingcorrect"
+//        case .nomatch:
+//            soundFilename = "dingwrong"
+//        }
         //Ищем файлы звука в проекте с определенным расширением
-        let bundlePath = Bundle.main.path(forResource: soundFilename, ofType: "wav")
+        let bundlePath = Bundle.main.path(forResource: effect, ofType: "wav")
         
         guard bundlePath != nil else {
             print("Error: Sound file doesn't exist!")
@@ -61,7 +51,7 @@ class SoundManager {
             player?.play()
             
         } catch {
-            print("Couldn't create the player for this file: \(soundFilename)")
+            print("Couldn't create the player for this file: \(effect)")
         }
     }
     

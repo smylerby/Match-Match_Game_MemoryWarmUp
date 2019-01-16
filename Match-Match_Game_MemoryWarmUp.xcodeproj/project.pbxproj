@@ -25,6 +25,10 @@
 		6838B03721DDF7B100BEA5D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03621DDF7B100BEA5D3 /* User.swift */; };
 		6838B03921DDFCD800BEA5D3 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6838B03821DDFCD800BEA5D3 /* RealmService.swift */; };
 		684A64F521EBBBCD00566660 /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A64F421EBBBCD00566660 /* GamePickerViewController.swift */; };
+		686D9EE221EF22BC00674CDE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D9EE121EF22BC00674CDE /* Button.swift */; };
+		68B3B50221EF26AD00375C68 /* MatchGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B3B50121EF26AD00375C68 /* MatchGame.storyboard */; };
+		68BB105C21EF24C300659494 /* MemozireGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BB105B21EF24C300659494 /* MemozireGame.storyboard */; };
+		68BB105E21EF250100659494 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB105D21EF250100659494 /* Storyboard.swift */; };
 		68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14C21DD3AA9005EDF72 /* protocols.swift */; };
 		68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14E21DD3AE5005EDF72 /* Card.swift */; };
 		68D2B15121DD3E75005EDF72 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */; };
@@ -58,6 +62,10 @@
 		6838B03621DDF7B100BEA5D3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6838B03821DDFCD800BEA5D3 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		684A64F421EBBBCD00566660 /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
+		686D9EE121EF22BC00674CDE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		68B3B50121EF26AD00375C68 /* MatchGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchGame.storyboard; sourceTree = "<group>"; };
+		68BB105B21EF24C300659494 /* MemozireGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemozireGame.storyboard; sourceTree = "<group>"; };
+		68BB105D21EF250100659494 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		68D2B14C21DD3AA9005EDF72 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		68D2B14E21DD3AE5005EDF72 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		68D2B15021DD3E75005EDF72 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 				680E128421DD30A100106189 /* Model */,
 				680E128521DD30A900106189 /* View */,
 				680E128621DD30AE00106189 /* Controller */,
+				68BB105A21EF248B00659494 /* Storyboards */,
 				680E128721DD30B700106189 /* Supporting */,
 			);
 			path = "Match-Match_Game_MemoryWarmUp";
@@ -114,10 +123,10 @@
 		680E128421DD30A100106189 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				680E128821DD30F200106189 /* TimerManager.swift */,
+				686D9EE021EF229100674CDE /* MemorizeGame */,
+				686D9EDF21EF227A00674CDE /* MatchGame */,
 				680E128A21DD310200106189 /* SoundManager.swift */,
-				680E128C21DD311000106189 /* CardDataManager.swift */,
-				68D2B14E21DD3AE5005EDF72 /* Card.swift */,
+				680E128821DD30F200106189 /* TimerManager.swift */,
 				6838B03621DDF7B100BEA5D3 /* User.swift */,
 			);
 			path = Model;
@@ -147,7 +156,6 @@
 		680E128721DD30B700106189 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				680E127621DD2F6000106189 /* Main.storyboard */,
 				680E129221DD35C500106189 /* Sounds */,
 				680E127221DD2F6000106189 /* AppDelegate.swift */,
 				6838B03821DDFCD800BEA5D3 /* RealmService.swift */,
@@ -166,6 +174,34 @@
 				68FB882B21E724DA00AB766F /* MatchgameSounds */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		686D9EDF21EF227A00674CDE /* MatchGame */ = {
+			isa = PBXGroup;
+			children = (
+				680E128C21DD311000106189 /* CardDataManager.swift */,
+				68D2B14E21DD3AE5005EDF72 /* Card.swift */,
+			);
+			path = MatchGame;
+			sourceTree = "<group>";
+		};
+		686D9EE021EF229100674CDE /* MemorizeGame */ = {
+			isa = PBXGroup;
+			children = (
+				686D9EE121EF22BC00674CDE /* Button.swift */,
+			);
+			path = MemorizeGame;
+			sourceTree = "<group>";
+		};
+		68BB105A21EF248B00659494 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				680E127621DD2F6000106189 /* Main.storyboard */,
+				68BB105B21EF24C300659494 /* MemozireGame.storyboard */,
+				68BB105D21EF250100659494 /* Storyboard.swift */,
+				68B3B50121EF26AD00375C68 /* MatchGame.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		68FB882B21E724DA00AB766F /* MatchgameSounds */ = {
@@ -275,6 +311,8 @@
 				680E127A21DD2F6300106189 /* Assets.xcassets in Resources */,
 				680E127821DD2F6000106189 /* Main.storyboard in Resources */,
 				68FB883321E7256B00AB766F /* 3.wav in Resources */,
+				68B3B50221EF26AD00375C68 /* MatchGame.storyboard in Resources */,
+				68BB105C21EF24C300659494 /* MemozireGame.storyboard in Resources */,
 				68FB883121E7256B00AB766F /* 4.wav in Resources */,
 				680E129A21DD35F500106189 /* dingcorrect.wav in Resources */,
 				680E129921DD35F500106189 /* cardflip.wav in Resources */,
@@ -346,6 +384,8 @@
 				68FB883621E727C500AB766F /* MemorizeSoundsViewController.swift in Sources */,
 				6838B03521DDF3FE00BEA5D3 /* ResultTableViewCell.swift in Sources */,
 				680E128F21DD321700106189 /* LoginViewController.swift in Sources */,
+				68BB105E21EF250100659494 /* Storyboard.swift in Sources */,
+				686D9EE221EF22BC00674CDE /* Button.swift in Sources */,
 				68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */,
 				680E128921DD30F200106189 /* TimerManager.swift in Sources */,
 				680E128B21DD310200106189 /* SoundManager.swift in Sources */,
