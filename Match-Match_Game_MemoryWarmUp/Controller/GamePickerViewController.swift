@@ -58,16 +58,18 @@ class GamePickerViewController: UIViewController {
     }
     
     func showMatchGame() {
+        let matchGame = Storyboard.MatchGame.rawValue
         
-        if let matchGameVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MatchGameVC") as? MatchGameViewController {
+        if let matchGameVC = UIStoryboard(name: matchGame, bundle: nil).instantiateViewController(withIdentifier: matchGame) as? MatchGameViewController {
             matchGameVC.playersName = playerName
             navigationController?.pushViewController(matchGameVC, animated: true)
             
         }
     }
     func showMemorizeGame() {
+        let memorizeGame = Storyboard.MemorizeGame.rawValue
         
-        if let memorizeSoundVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MemorizeSoundVC") as? MemorizeSoundsViewController {
+        if let memorizeSoundVC = UIStoryboard(name: memorizeGame, bundle: nil).instantiateViewController(withIdentifier: memorizeGame) as? MemorizeSoundsViewController {
             navigationController?.pushViewController(memorizeSoundVC, animated: true)
             
         }

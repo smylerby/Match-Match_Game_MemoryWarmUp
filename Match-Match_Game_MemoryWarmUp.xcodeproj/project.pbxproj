@@ -27,7 +27,7 @@
 		684A64F521EBBBCD00566660 /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A64F421EBBBCD00566660 /* GamePickerViewController.swift */; };
 		686D9EE221EF22BC00674CDE /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686D9EE121EF22BC00674CDE /* Button.swift */; };
 		68B3B50221EF26AD00375C68 /* MatchGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B3B50121EF26AD00375C68 /* MatchGame.storyboard */; };
-		68BB105C21EF24C300659494 /* MemozireGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BB105B21EF24C300659494 /* MemozireGame.storyboard */; };
+		68BB105C21EF24C300659494 /* MemorizeGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BB105B21EF24C300659494 /* MemorizeGame.storyboard */; };
 		68BB105E21EF250100659494 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB105D21EF250100659494 /* Storyboard.swift */; };
 		68D2B14D21DD3AA9005EDF72 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14C21DD3AA9005EDF72 /* protocols.swift */; };
 		68D2B14F21DD3AE5005EDF72 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2B14E21DD3AE5005EDF72 /* Card.swift */; };
@@ -64,7 +64,7 @@
 		684A64F421EBBBCD00566660 /* GamePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 		686D9EE121EF22BC00674CDE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		68B3B50121EF26AD00375C68 /* MatchGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MatchGame.storyboard; sourceTree = "<group>"; };
-		68BB105B21EF24C300659494 /* MemozireGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemozireGame.storyboard; sourceTree = "<group>"; };
+		68BB105B21EF24C300659494 /* MemorizeGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemorizeGame.storyboard; sourceTree = "<group>"; };
 		68BB105D21EF250100659494 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		68D2B14C21DD3AA9005EDF72 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		68D2B14E21DD3AE5005EDF72 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -196,9 +196,9 @@
 		68BB105A21EF248B00659494 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				680E127621DD2F6000106189 /* Main.storyboard */,
-				68BB105B21EF24C300659494 /* MemozireGame.storyboard */,
 				68BB105D21EF250100659494 /* Storyboard.swift */,
+				680E127621DD2F6000106189 /* Main.storyboard */,
+				68BB105B21EF24C300659494 /* MemorizeGame.storyboard */,
 				68B3B50121EF26AD00375C68 /* MatchGame.storyboard */,
 			);
 			path = Storyboards;
@@ -312,7 +312,7 @@
 				680E127821DD2F6000106189 /* Main.storyboard in Resources */,
 				68FB883321E7256B00AB766F /* 3.wav in Resources */,
 				68B3B50221EF26AD00375C68 /* MatchGame.storyboard in Resources */,
-				68BB105C21EF24C300659494 /* MemozireGame.storyboard in Resources */,
+				68BB105C21EF24C300659494 /* MemorizeGame.storyboard in Resources */,
 				68FB883121E7256B00AB766F /* 4.wav in Resources */,
 				680E129A21DD35F500106189 /* dingcorrect.wav in Resources */,
 				680E129921DD35F500106189 /* cardflip.wav in Resources */,

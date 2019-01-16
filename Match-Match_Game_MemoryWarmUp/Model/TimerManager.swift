@@ -20,6 +20,8 @@ class TimerManager: timeCountable {
         }   )
     }
     
+
+    
     func stopTimer() {
         timer.invalidate()
     }

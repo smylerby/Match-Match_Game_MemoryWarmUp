@@ -10,10 +10,10 @@ import Foundation
 
 enum ButtonPressed: String {
     
-    case red = "redPressed"
-    case yellow = "yellowPressed"
-    case blue = "bluePressed"
-    case green = "greenPressed"
+    case red = "1"
+    case yellow = "2"
+    case blue = "3Pressed"
+    case green = "4Pressed"
     
 }
 

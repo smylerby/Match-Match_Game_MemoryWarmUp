@@ -13,7 +13,7 @@
         <!--Memorize Sounds View Controller-->
         <scene sceneID="o5t-vS-O03">
             <objects>
-                <viewController storyboardIdentifier="MemorizeSoundVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qf8-ph-pXq" customClass="MemorizeSoundsViewController" customModule="Match_Match_Game_MemoryWarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemorizeGame" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qf8-ph-pXq" customClass="MemorizeSoundsViewController" customModule="Match_Match_Game_MemoryWarmUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sa3-qm-yGF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,28 +32,28 @@
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-Bx-auD">
                                         <rect key="frame" x="4.5" y="12" width="165" height="165"/>
-                                        <state key="normal" image="red"/>
+                                        <state key="normal" image="1normal"/>
                                         <connections>
                                             <action selector="soundButton:" destination="qf8-ph-pXq" eventType="touchUpInside" id="Hf6-wV-H7t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbx-4P-rrB">
                                         <rect key="frame" x="4" y="182" width="165" height="166"/>
-                                        <state key="normal" image="green"/>
+                                        <state key="normal" image="4normal"/>
                                         <connections>
                                             <action selector="soundButton:" destination="qf8-ph-pXq" eventType="touchUpInside" id="Bao-eh-btK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rrE-OV-XDq">
                                         <rect key="frame" x="173" y="12" width="166" height="165"/>
-                                        <state key="normal" image="yellow"/>
+                                        <state key="normal" image="2normal"/>
                                         <connections>
                                             <action selector="soundButton:" destination="qf8-ph-pXq" eventType="touchUpInside" id="xoh-h1-W7g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD2-Dl-N1T">
                                         <rect key="frame" x="173" y="182" width="166" height="166"/>
-                                        <state key="normal" image="blue"/>
+                                        <state key="normal" image="3normal"/>
                                         <connections>
                                             <action selector="soundButton:" destination="qf8-ph-pXq" eventType="touchUpInside" id="4Eu-aQ-3Ks"/>
                                         </connections>
@@ -79,16 +79,28 @@
                                     <constraint firstItem="cD2-Dl-N1T" firstAttribute="leading" secondItem="35V-Pd-8U8" secondAttribute="trailing" constant="-42.5" id="whf-Sh-N7b"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIi-FH-neE">
+                                <rect key="frame" x="60" y="524" width="255" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fZi-aE-je9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="EDS-wL-Pog" firstAttribute="top" secondItem="0TQ-K5-dn1" secondAttribute="top" constant="129" id="A3T-uk-gdZ"/>
                             <constraint firstItem="EDS-wL-Pog" firstAttribute="height" secondItem="QMY-oH-2LS" secondAttribute="height" multiplier="0.55" id="DBn-kv-G9W"/>
                             <constraint firstItem="oi8-Bc-bAh" firstAttribute="top" secondItem="0TQ-K5-dn1" secondAttribute="top" constant="20" id="K1q-OG-4u1"/>
+                            <constraint firstItem="lIi-FH-neE" firstAttribute="leading" secondItem="0TQ-K5-dn1" secondAttribute="leading" constant="60" id="MaF-RL-t7k"/>
+                            <constraint firstItem="lIi-FH-neE" firstAttribute="top" secondItem="EDS-wL-Pog" secondAttribute="bottom" constant="8" id="OFj-VJ-Ada"/>
                             <constraint firstItem="QMY-oH-2LS" firstAttribute="top" secondItem="sa3-qm-yGF" secondAttribute="top" id="S02-SS-tLi"/>
                             <constraint firstItem="QMY-oH-2LS" firstAttribute="leading" secondItem="0TQ-K5-dn1" secondAttribute="leading" id="Vv8-Mq-5N3"/>
                             <constraint firstItem="QMY-oH-2LS" firstAttribute="trailing" secondItem="0TQ-K5-dn1" secondAttribute="trailing" id="Zer-gy-2ob"/>
                             <constraint firstItem="EDS-wL-Pog" firstAttribute="leading" secondItem="0TQ-K5-dn1" secondAttribute="leading" constant="16" id="fQZ-J3-hJf"/>
                             <constraint firstItem="oi8-Bc-bAh" firstAttribute="leading" secondItem="0TQ-K5-dn1" secondAttribute="leading" constant="60" id="kV3-5D-e9s"/>
+                            <constraint firstItem="0TQ-K5-dn1" firstAttribute="trailing" secondItem="lIi-FH-neE" secondAttribute="trailing" constant="60" id="nPY-7f-hWS"/>
                             <constraint firstItem="0TQ-K5-dn1" firstAttribute="trailing" secondItem="oi8-Bc-bAh" secondAttribute="trailing" constant="60" id="ooU-3p-tyx"/>
                             <constraint firstItem="QMY-oH-2LS" firstAttribute="bottom" secondItem="0TQ-K5-dn1" secondAttribute="bottom" id="s5p-2B-Jhp"/>
                             <constraint firstItem="0TQ-K5-dn1" firstAttribute="trailing" secondItem="EDS-wL-Pog" secondAttribute="trailing" constant="16" id="weA-4o-XOd"/>
@@ -96,8 +108,9 @@
                         <viewLayoutGuide key="safeArea" id="0TQ-K5-dn1"/>
                     </view>
                     <connections>
-                        <outlet property="levelLabel" destination="oi8-Bc-bAh" id="lrX-TT-8z1"/>
+                        <outlet property="levelLabel" destination="lIi-FH-neE" id="VqM-xZ-8KD"/>
                         <outlet property="startGameButton" destination="35V-Pd-8U8" id="lzi-mM-k6H"/>
+                        <outlet property="statusLabel" destination="oi8-Bc-bAh" id="QCf-i1-ffr"/>
                         <outletCollection property="soundButton" destination="D9Q-Bx-auD" collectionClass="NSMutableArray" id="lPG-NC-VPn"/>
                         <outletCollection property="soundButton" destination="rrE-OV-XDq" collectionClass="NSMutableArray" id="Iup-cl-fAX"/>
                         <outletCollection property="soundButton" destination="cD2-Dl-N1T" collectionClass="NSMutableArray" id="3H5-g5-ZTe"/>
@@ -110,11 +123,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1normal" width="165" height="165"/>
+        <image name="2normal" width="166" height="165"/>
+        <image name="3normal" width="166" height="166"/>
+        <image name="4normal" width="165" height="166"/>
         <image name="background_1" width="414" height="736"/>
-        <image name="blue" width="166" height="166"/>
-        <image name="green" width="165" height="166"/>
         <image name="play" width="88" height="88"/>
-        <image name="red" width="165" height="165"/>
-        <image name="yellow" width="166" height="165"/>
     </resources>
 </document>
